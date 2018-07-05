@@ -1,148 +1,553 @@
-﻿
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+<!DOCTYPE HTML>
 <html>
-
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
-<meta name="keywords" content=""> 
-<meta name="description" content="">
-<link href="./t_files/main.css" media="all" rel="stylesheet">
-<title>LY's Homepage</title>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+ <!-- Custom Theme files -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="keywords" content="" />
+<!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+ <!---- start-smoth-scrolling---->
 </head>
+	<body>
+		<!-- container -->
+			<!-- header -->
+			<div id="home" class="header">
+				<div class="container">
+				<!-- top-hedader -->
+				<div class="top-header">
+					<!-- /logo -->
+					<!--top-nav---->
+					<div class="top-nav">
+					<div class="navigation">
+					<div class="logo">
+						<h1><a href="index.html"><span></span>吕越</a></h1>
+					</div>
+					<div class="navigation-right">
+						<span class="menu"><img src="images/menu.png" alt=" " /></span>
+						<nav class="link-effect-3" id="link-effect-3">
+							
+						</nav>
+							<!-- script-for-menu -->
+								<script>
+								   $( "span.menu" ).click(function() {
+									 $( "ul.nav1" ).slideToggle( 300, function() {
+									 // Animation complete.
+									  });
+									 });
+								</script>
+							<!-- /script-for-menu -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<!-- /top-hedader -->
+				</div>
+			<div class="banner-info">
+				<div class="col-md-7 header-right">
+					<h1>Hi !</h1>
+					
+					<ul class="address">
+					
+					<li>
+							<ul class="address-text">
+								<li><b>NAME</b></li>
+								<li>吕越</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>COMPANY</b></li>
+								<li>中国海洋大学    信息科学与工程学院  计算机科学与技术系</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>SKILL </b></li>
+								<li>Python, C++, HTML, 机器学习, 遥感图像处理</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>ADDRESS </b></li>
+								<li>山东省青岛市崂山区中国海洋大学某个宿舍楼</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>E-MAIL </b></li>
+								<li><a href="mailto:example@mail.com">ccly1996@163.com</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>WEBSITE </b></li>
+								<li><a href="#">github.com/ccly1996</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-5 header-left">
+					<img src="images/img1.jpg" alt="">
+				</div>
+				<div class="clearfix"> </div>
+						
+		      </div>
+			</div>
+		</div>
+	</div>
+			<!-- about -->
+			<div id="about" class="about">
+				<div class="col-md-6 about-left">
+					<div id="owl-demo1" class="owl-carousel owl-carousel2">
+					                <div class="item">
+					                	<div class="about-left-grid">
+											<h2>基本信息</h2>
+											<p>I am a student at Department of Computer Science and Technology .</p>
+											
+										</div>
+					                </div>
+					                  <div class="item">
+					                	<div class="about-left-grid">
+											<h2>发表论文</h2>
+											<p>呃呃呃比较垃圾的就不写了，能拿的出手的还没有</p>
+											
+										</div>
+					                </div>
+					                  <div class="item">
+					                	<div class="about-left-grid">
+											<h2>获奖经历</h2>
+											<p>统一冰红茶“再来一瓶”奖</p>
+											
+										</div>
+					                </div>
+					</div>
+				</div>
+				<div class="col-md-6 about-right">
+					
+				</div>
+				<div class="clearfix"> </div>
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo1").owlCarousel({
+						items : 1,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : false,
+						navigationText :  false,
+						pagination : true,
+					});
+				});
+			</script>
+			<!-- Feedback -->
+			<script>
+				$(document).ready(function() {
+					$("#owl-demo3").owlCarousel({
+						items : 1,
+						lazyLoad : false,
+						autoPlay : true,
+						navigation : false,
+						navigationText :  true,
+						pagination :true,
+					});
+				});
+			</script>
+			</div>
+			<!-- /about -->
+			<!-- services -->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head one text-center ">
+						<h4>WHAT I DO</h4>
+						<h3>MY <span>MAJOR</span></h3>
+						<span class="border two"></span>
+					</div>
+					<!-- services-grids -->
+					<div class="wthree_about_right_grids w3l-agile">
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-pencil"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>机器学习</h4>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-cog"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>C++</h4>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-leaf"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>图像处理</h4>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 wthree_about_right_grid">
+					<div class="col-xs-4 wthree_about_right_grid_left">
+						<div class="hvr-rectangle-in">
+							<i class="glyphicon glyphicon-gift"></i>
+						</div>
+					</div>
+					<div class="col-xs-8 wthree_about_right_grid_right">
+						<h4>计算机视觉</h4>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
 
-<body>
+					<!-- services-grids -->
+				</div>
+			</div>
+			<!-- services -->
+			
+			<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			
+						</div>
+				</div>
+	<!--//work-experience-->
 
-<table id="tbInformation" width="100%">
-	<tr>
-		<td width="500">
-		<h1>吕越</h1>
-		</td>
-		<td rowspan="3" align="center">
-		<img src="./t_files/pic.jpg" border="0" height="200" class="portrait">
-		</td>
-	</tr>
-	<tr>
-		<td>
-		<p style="line-height:1.8">
-        中国海洋大学 &nbsp&nbsp 信息科学与工程学院<br>
-		计算机科学与技术系<br>
-		Email: XXXXX AT ouc DOT edu DOT cn <br>
-		Github: github.com/ccly1996<br>
-		工作技能：Python, C++, HTML, 机器学习, 遥感图像处理<br>
-		</p>
-	</tr>
-</table>
-<hr>
+		<!-- portfolio -->
+<div class="portfolio" id="port">
+				<div class="service-head text-center">
+						<h4>MY SCHOOL</h4>
+						<h3>MY <span>FRIENDS</span></h3>
+						<span class="border"></span>
+					</div>
+			<div class="portfolio-grids">
+				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				<script type="text/javascript">
+									$(document).ready(function () {
+										$('#horizontalTab').easyResponsiveTabs({
+											type: 'default', //Types: default, vertical, accordion           
+											width: 'auto', //auto or any width like 600px
+											fit: true   // 100% fit in a container
+										});
+									});
+									
+				</script>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab" ><span><a href="https://summitgao.github.io">高峰（导师）</a></span></li> 
+							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span><a href="https://formango.github.io/">高云浩</a></span></li> 
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span><a href="https://qun1128.github.io/">王群</a></span></li> 				
+							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span><a href="https://mr-yuppie.github.io/">王晓</a></span></li> 
+						</ul>				  	 
+						
+	</div>
+	<!-- //portfolio -->
+    <!-- top-grids -->
+				<div class="blog" id="blogs">
+					<div class="container">
+						<div class="service-head text-center">
+						<h4>BLOGS</h4>
+						<h3>个人<span>记录</span></h3>
+						<span class="border one"></span>
+					</div>
+					   <div class="news-grid w3l-agile">
+					    <div class="col-md-6 news-img">
+						  <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b1.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+					    <div class="col-md-6 news-text">
+						   <h3> <a href="data/leetcode.html" data-toggle="" data-target="#">LeetCode学习笔记</a></h3>
+							
+							<p>极客挚爱的高质量在线技术平台，想要学习和提升专业能力从这里开始，充足技术干货等你来啃，轻松拿下 Dream Offer！</p>
+							
+					
+						</div>
+		
+						<div class="clearfix"></div>
+					 </div>
+					  <div class="news-grid">
 
-<h3>基本信息</h3>
-I am a student at Department of Computer Science and Technology . <br>
+					    <div class="col-md-6 news-text two">
+						   <h3> <a href="data/vision.html" data-toggle="" data-target="">计算机视觉学习笔记</a></h3>
+							
+							<p>计算机视觉是一门研究如何使机器“看”的科学，更进一步的说，就是是指用摄影机和电脑代替人眼对目标进行识别、跟踪和测量等机器视觉，并进一步做图形处理，使电脑处理成为更适合人眼观察或传送给仪器检测的图像。作为一个科学学科，计算机视觉研究相关的理论和技术，试图建立能够从图像或者多维数据中获取‘信息’的人工智能系统。这里所 指的信息指Shannon定义的，可以用来帮助做一个“决定”的信息。因为感知可以看作是从感官信号中提 取信息，所以计算机视觉也可以看作是研究如何使人工系统从图像或多维数据中“感知”的科学。</p>
+								
+					
+						</div>
+						<div class="col-md-6 news-img two">
+						   <a href="#" data-toggle="modal" data-target="#myModal1"> <img src="images/b2.jpg" alt=" " class="img-responsive"></a>
+						 
+						</div>
+						<div class="clearfix"></div>
+					 </div>
+					  
+					</div>
+				</div>
+				<!-- top-grids -->
+	<!-- /blog-pop-->
+			<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog about" role="document">
+					<div class="modal-content about">
+						<div class="modal-header">
+							<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+						</div>
+						<div class="modal-body about">
+								<div class="about">
+									
+									  <div class="about-inner">
+									   
+									      <img src="images/b3.jpg" alt="about"/>
+										     <h4 class="tittle">A Fews words about us</h4>
+										   <p>Lorem ipsum dolor sit amet Integer gravida,Lorem ipsum dolor sit amet Integer gravida velit,Ming sits in the corner the whole day. She's into crochet. quis dolor tristiqumsan.Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. velit quis dolor tristiqumsan.</p>
+										    <p>Lorem ipsum dolor sit amet. Integer gravida velit quis dolor tristiqumsan.anteposuerit litterarum formas humanitatis per seacula amet Integer gravida velit. </p>
+									  </div>
+												
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //blog-pop-->
 
+			<!-- /header -->
 
-<hr>
+			<!-- //footer -->
+		<!-- /container -->
+		<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--start-smooth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+								<!--end-smooth-scrolling-->
+<!-- //for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	
 
-
-
-
-<h3>发表论文</h3>
-<ul>
-<li> <b>Eason Chen</b>, W. Li, W. Li, and L. Van Gool. Appearance-and-Relation Networks for Video Classification. in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018. 
-
-</ul>
-<hr>
-
-<h3>获奖经历</h3>
-<ul>
-
-<li> 统一冰红茶“再来一瓶”奖
-</ul>
-<hr>
-
-
-<h3>我的朋友</h3>
-<a href="https://summitgao.github.io">Feng Gao</a> | Xiao Wang | Dong Wang | Yandong Li | Yunhao Gao | Qun Wang 
-<br><br>
-<hr>
-
-
-
-
-
-
-<script 
-  type="text/JavaScript" 
-  language="JavaScript">
-<!-- 
-//
-// format date as dd-mmm-yy
-// example: 12-Jan-99
-//
-function date_ddmmmyy(date)
-{
-  var d = date.getDate();
-  var m = date.getMonth() + 1;
-  var y = date.getYear();
-
-  // handle different year values 
-  // returned by IE and NS in 
-  // the year 2000.
-  if(y >= 2000)
-  {
-    y -= 2000;
-  }
-  if(y >= 100)
-  {
-    y -= 100;
-  }
-
-  // could use splitString() here 
-  // but the following method is 
-  // more compatible
-  var mmm = 
-    ( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
-    ( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
-    ( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
-    (10==m)?'Oct':(11==m)?'Nov':'Dec';
-
-  return "" +
-    (d<10?"0"+d:d) + "-" +
-    mmm + "-" +
-    (y<10?"0"+y:y);
-}
-
-
-//
-// get last modified date of the 
-// current document.
-//
-function date_lastmodified()
-{
-  var lmd = document.lastModified;
-  var s   = "Unknown";
-  var d1;
-
-  // check if we have a valid date
-  // before proceeding
-  if(0 != (d1=Date.parse(lmd)))
-  {
-    s = "" + date_ddmmmyy(new Date(d1));
-  }
-
-  return s;
-}
-
-//
-// finally display the last modified date
-// as DD-MMM-YY
-//
-document.write( 
-  "This page was updated on " + 
-  date_lastmodified() );
-
-// -->
-</script>
-
-</body>
-
+	</body>
 </html>
+
